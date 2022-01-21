@@ -24,6 +24,16 @@ export async function getStarWarsPeople() {
     return json.results;
 }
 
+ // API Documentation: https://rickandmortyapi.com/
+ export async function getRickAndMortyPeople() {
+  let url = 'https://rickandmortyapi.com/';
+
+  const resp = await fetch(url);
+  const json = await resp.json();
+  return json.results;
+}
+
+
 //////Other api documentation if you want to use a different api
 ///////https://last-airbender-api.herokuapp.com/ 
 ///////https://hey-arnold-api-documentation.netlify.app/
