@@ -25,12 +25,12 @@ export async function getStarWarsPeople() {
 }
 
  // API Documentation: https://rickandmortyapi.com/
- export async function getRickAndMortyPeople() {
-  let url = 'https://rickandmortyapi.com/';
+export async function getRickAndMortyPeople() {
+    let url = 'https://rickandmortyapi.com/';
 
-  const resp = await fetch(url);
-  const json = await resp.json();
-  return json.results;
+    const resp = await fetch(url);
+    const json = await resp.json();
+    return json.results;
 }
 
 
